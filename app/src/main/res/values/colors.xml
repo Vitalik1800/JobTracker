@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="primary">#2563EB</color>
+    <color name="primary_dark">#1D4ED8</color>
+    <color name="secondary">#10B981</color>
+
+    <color name="background">#F8FAFC</color>
+    <color name="surface">#FFFFFF</color>
+
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#64748B</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="status_saved">#9E9E9E</color>
+    <color name="status_applied">#2196F3</color>
+    <color name="status_interview">#FF9800</color>
+    <color name="status_technical">#9C27B0</color>
+    <color name="status_offer">#4CAF50</color>
+    <color name="status_rejected">#F44336</color>
+
+</resources>
