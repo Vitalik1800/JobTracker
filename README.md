@@ -90,7 +90,7 @@ All screenshots and demo videos can be found in:
 
 ## 👨‍💻 Author
 
-Vitali Semchyshyn
+Vitaly Semchyshyn
 
 Android Developer
 
