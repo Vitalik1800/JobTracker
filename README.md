@@ -76,8 +76,8 @@ JobTracker is a modern Android application for managing job applications, tracki
 
 All screenshots and demo videos can be found in:
 
-screenshots/
-demo/
+* screenshots/
+* demo/
 
 ## 🚀 Installation
 
