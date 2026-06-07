@@ -5,10 +5,10 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import androidx.appcompat.widget.SearchView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.appcompat.widget.SearchView;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -22,8 +22,6 @@ import com.vs18.jobtracker.ui.adapters.JobAdapter;
 import com.vs18.jobtracker.utils.JobStatus;
 import com.vs18.jobtracker.utils.SortingUtils;
 import com.vs18.jobtracker.viewmodel.JobViewModel;
-
-import kotlinx.coroutines.Job;
 
 public class JobsFragment extends Fragment {
 
@@ -78,9 +76,17 @@ public class JobsFragment extends Fragment {
     private void setupObservers() {
 
         viewModel.getAllJobs()
-                .observe(
-                        getViewLifecycleOwner(),
-                        jobs -> adapter.setJobs(jobs)
+                .observe(getViewLifecycleOwner(),
+                        jobs -> {
+
+                            adapter.setJobs(jobs);
+
+                            binding.tvEmpty.setVisibility(
+                                    jobs.isEmpty()
+                                        ? View.VISIBLE
+                                        : View.GONE
+                            );
+                        }
                 );
     }
 
